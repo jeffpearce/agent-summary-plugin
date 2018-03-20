@@ -1,0 +1,9 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson">
+    <t:summary icon="orange-square.png">
+        <div>Agents used in this build</div>
+        <j:forEach var="agent" items="${it.agents}">
+            <div style="margin-left:2em">${agent}</div>
+        </j:forEach>
+    </t:summary>
+</j:jelly>
